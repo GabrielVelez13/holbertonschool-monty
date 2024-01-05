@@ -1,10 +1,10 @@
 #include "monty.h"
 /**
- * f_pall - prints the stack
- * @head: stack head
- * @counter: no used
+* f_pall - prints the stack
+* @head: stack head
+* @counter: not used
 */
-void f_pall(stack **head, unsigned int counter)
+void custom_pall(stack **head, unsigned int counter)
 {
 	stack *h;
 	(void)counter;

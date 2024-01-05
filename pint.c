@@ -1,17 +1,17 @@
 #include "monty.h"
 /**
- * f_pint - prints the top
- * @head: stack head
- * @counter: line_number
+* f_pint - prints the top
+* @head: stack head
+* @counter: line_number
 */
-void f_pint(stack **head, unsigned int counter)
+void custom_pint(stack **head, unsigned int counter)
 {
 	if (*head == NULL)
 	{
 		fprintf(stderr, "L%u: can't pint, stack empty\n", counter);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*head);
+		custom_free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	printf("%d\n", (*head)->n);
